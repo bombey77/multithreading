@@ -5,7 +5,7 @@ import java.util.concurrent.Phaser;
 public class Runner {
 
     public static void main(String[] args) {
-        Phaser phaser = new Phaser(2);
+        Phaser phaser = new Phaser();
         new CarWasher(phaser).start();
         new CarWasher(phaser).start();
 

@@ -8,6 +8,7 @@ public class CarWasher extends Thread {
 
     public CarWasher(Phaser phaser) {
         this.phaser = phaser;
+        this.phaser.register();
     }
 
     @Override
