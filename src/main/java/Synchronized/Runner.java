@@ -8,7 +8,6 @@ public class Runner {
 
         MyThread myThread1 = new MyThread(resource);
         MyThread myThread2 = new MyThread(resource);
-        myThread1.setName("one");
 
         myThread1.start();
         myThread2.start();
