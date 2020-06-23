@@ -1,0 +1,19 @@
+package main.java.Phaser;
+
+import java.util.concurrent.Phaser;
+
+public class Runner {
+
+    public static void main(String[] args) {
+        Phaser phaser = new Phaser();
+        new CarWasher(phaser).start();
+        new CarWasher(phaser).start();
+
+//        Thread-0 - is washing car...
+//        Thread-1 - is washing car...
+//        Thread-1 - is washing car...
+//        Thread-0 - is washing car...
+//        Thread-0 - is washing car...
+//        Thread-1 - is washing car...
+    }
+}
