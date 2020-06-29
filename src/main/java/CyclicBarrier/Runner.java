@@ -11,5 +11,11 @@ public class Runner {
         new Worker(barrier).start();
         new Worker(barrier).start();
         System.out.println("monitor isn't locked");
+
+//        before workers started
+//        monitor isn't locked
+//        The worker is on the work position
+//        The worker is on the work position
+//        The car is washing...
     }
 }
